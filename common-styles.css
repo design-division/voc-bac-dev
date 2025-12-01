@@ -1,0 +1,212 @@
+/*FONT INSTALL / INTRO BOLD*/
+@font-face {
+    font-family: 'Intro';
+    src:
+        url('https://static1.squarespace.com/static/68b80c9316f8503656233334/t/68dc5051d5d8207a0b481521/1759268945709/Intro-Bold-Alt.ttf') format('truetype'),
+        url('https://static1.squarespace.com/static/68b80c9316f8503656233334/t/68dc50541c1c360b4efe72e6/1759268948722/Intro-Bold-Alt.woff') format('woff'),
+        url('https://static1.squarespace.com/static/68b80c9316f8503656233334/t/68dc505775dff5383dabd394/1759268951639/Intro-Bold-Alt.woff2') format('woff2');
+    font-weight: 700;
+}
+
+/*FONT INSTALL / INTRO REGULAR*/
+@font-face {
+    font-family: 'Intro';
+    src:
+        url('https://static1.squarespace.com/static/68b80c9316f8503656233334/t/68dc505c8877c15ae8adc0b8/1759268957184/Intro-Regular-Alt.ttf') format('truetype'),
+        url('https://static1.squarespace.com/static/68b80c9316f8503656233334/t/68dc505fc57b7f02e64ac358/1759268959995/Intro-Regular-Alt.woff') format('woff'),
+        url('https://static1.squarespace.com/static/68b80c9316f8503656233334/t/68dc506205913e69733376ad/1759268962027/Intro-Regular-Alt.woff2') format('woff2');
+    font-weight: 400;
+}
+
+/*COLOUR VARIABLES*/
+@white: ~"hsl(var(--white-hsl))";
+@light: ~"hsl(var(--lightAccent-hsl))";
+@accent: ~"hsl(var(--accent-hsl))";
+@dark: ~"hsl(var(--darkAccent-hsl))";
+@black: ~"hsl(var(--black-hsl))";
+
+:root {
+    /*Colours*/
+    --accent-blue: #75FFFF;
+    --accent-green: #D2FF00;
+    --dark-2: #776855;
+    --light-2: #A79A8A;
+
+    /*Typefaces*/
+    --heading-font-font-family: "Intro", Museo Sans, sans-serif;
+    --body-font-font-family: "Intro", Museo Sans, sans-serif;
+    --primary-button-font-font-family: "Intro", Museo Sans, sans-serif;
+    --secondary-button-font-font-family: "Intro", Museo Sans, sans-serif;
+    --tertiary-button-font-font-family: "Intro", Museo Sans, sans-serif;
+
+  /*Font weight*/
+    --heading-font-font-weight: 700;
+    --body-font-font-weight: 400;
+    --primary-button-font-font-weight: 400;
+    --secondary-button-font-font-weight: 400;
+    --tertiary-button-font-font-weight: 400;
+
+
+    /*Font Sizes*/
+    --h1-size: ~"calc((var(--heading-1-size-value) - 1) * 1.2vw + 1rem)";
+    --h2-size: ~"calc((var(--heading-2-size-value) - 1) * 1.2vw + 1rem)";
+    --h3-size: ~"calc((var(--heading-3-size-value) - 1) * 1.2vw + 1rem)";
+    --h4-size: ~"calc((var(--heading-4-size-value) - 1) * 1.2vw + 1rem)";
+    --p1-size: ~"calc((var(--large-text-size-value) - 1) * 1.2vw + 1rem)";
+    --p2-size: ~"calc((var(--normal-text-size-value) - 1) * 1.2vw + 1rem)";
+    --p3-size: ~"calc((var(--small-text-size-value) - 1) * 1.2vw + 1rem)";
+  --cta-size: ~"calc((var(--primary-button-font-font-size-value) - 1) * 1.2vw + 1rem)";
+
+    /*Letter Spacing*/
+    --lsp-lrg: -0.06em;
+    --lsp-sml: -0.05em;
+    --heading-font-letter-spacing: var(--lsp-lrg);
+    --body-font-letter-spacing: var(--lsp-sml);
+
+    /*Misc*/
+    --voc-logo-width: 35vmax;
+    --br-med: 1.5rem;
+    --pad-med: 3vw;
+    --trans-1: all 350ms ease;
+}
+
+
+/*RESPONSIVE / Phones & Tablets*/
+@media only screen and (max-width: 62em) {
+    :root {
+
+        --h1-size: ~"calc((var(--heading-1-size-value) - 1) * calc(.012 * min(100vh, 900px)) + 0.6rem)";
+        --h2-size: ~"calc((var(--heading-2-size-value) - 1) * calc(.012 * min(100vh, 900px)) + 0.6rem)";
+        --h3-size: ~"calc((var(--heading-3-size-value) - 1) * calc(.012 * min(100vh, 900px)) + 1rem)";
+        --h4-size: ~"calc((var(--heading-4-size-value) - 1) * calc(.012 * min(100vh, 900px)) + 1rem)";
+        --p1-size: ~"calc((var(--large-text-size-value) - 1) * calc(.012 * min(100vh, 900px)) + 1rem)";
+        --p2-size: ~"calc((var(--normal-1-size-value) - 1) * calc(.012 * min(100vh, 900px)) + 1rem)";
+        --p3-size: ~"calc((var(--small-1-size-value) - 1) * calc(.012 * min(100vh, 900px)) + 1rem)";
+        --cta-size: ~"calc((var(--primary-button-font-font-size-value) - 1) * calc(.012 * min(100vh, 900px)) + 1rem)";
+
+        //Misc
+        --pad-med: 7.5vw;
+        --voc-logo-width: 30vmax;
+    }
+
+    @supports (--test-custom-property: true) {
+        body {
+            --sqs-site-gutter: 3.5vmax !important;
+        }
+    }
+
+    h1 {
+        font-size: var(--h1-size);
+        br {
+            display: none;
+        }
+    }
+
+    h2 {
+        font-size: var(--h2-size);
+    }
+
+    h3 {
+        font-size: var(--h3-size);
+    }
+
+    h4 {
+        font-size: var(--h4-size);
+    }
+}
+
+/*TESTING NEW CODE*/
+
+
+/*Rounded Image Corners*/
+.sqs-image-shape-container-element {
+    border-radius: var(--br-med);
+}
+
+/*HORIZONTAL LINE BLOCK*/
+.sqs-block.horizontalrule-block.sqs-block-horizontalrule {
+  padding-bottom: 0px !important;
+  padding-top: 0px !important;
+  }
+  .sqs-block-horizontalrule hr {
+    height: 2px !important;
+  }
+
+
+/*HERO TEXT SECTIONS / Laptops & above */
+@media only screen and (min-width: 62em) {
+
+    section[id*="hero"] {
+        h1 {
+            font-size: ~"calc(var(--h1-size) * 1.6)" !important;
+        }
+    }
+}
+
+/*HERO TEXT SECTIONS / ALL DEVICES */
+section[id*="hero"] {
+    h1 {
+        font-size: ~"calc(var(--h1-size) * 1.2)" !important;
+        font-weight: var(--body-font-font-family);
+    }
+}
+
+/*Anchor Links*/
+html {
+    scroll-padding-top: 25vh !important;
+}
+
+
+/*CONTACT FORM / COMMON*/
+.form-field-checkbox-fill-outline.form-field-checkbox-color-inverted .sqs-site-style-form .form-item.checkbox label input[type="checkbox"]:checked {
+    background-color: @dark  !important;
+}
+
+.sqs-site-style-form .field-list .option {
+    color: @black  !important;
+}
+
+.sqs-site-style-form .react-form-contents .field-list .field .option label {
+    vertical-align: middle !important;
+}
+
+.field-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 8px;
+}
+
+.field:not(#text-fc9ffdb8-3e19-4aed-82c7-26ce45358886):not(#text-786c4a6e-ad66-41eb-9112-15a33b77ed4f) {
+    grid-column: span 2;
+}
+
+::-webkit-input-placeholder {
+    color: @black  !important;
+}
+
+:-ms-input-placeholder {
+    color: @black  !important;
+}
+
+:-moz-placeholder {
+    color: @black  !important;
+}
+
+::-moz-placeholder {
+    color: @black  !important;
+}
+
+.form-field-checkbox-type-button.form-field-checkbox-fill-outline .sqs-site-style-form .form-item.checkbox label span {
+    padding-bottom: 3px !important;
+}
+
+fieldset#checkbox-598945f0-8359-4f49-8d4d-12be1666f69c {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 0.5rem;
+
+    .title {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+}
