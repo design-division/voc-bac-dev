@@ -1,0 +1,99 @@
+/*BUTTONS*/
+.btn-group a {
+  margin: 0.25rem !important;
+}
+
+/*BUTTON HOVERS // Laptops & above*/
+@media only screen and (min-width: 62em) {
+  .sqs-button-element--secondary:hover {
+    background-color: transparent !important;
+    border-color: @dark;
+  }
+
+  .sqs-block-button-element .text-wrap {
+    vertical-align: middle !important;
+  }
+
+  .sqs-block-button-element,
+  .image-button-inner .sqs-button-element--primary,
+  .sqs-system-button {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    transition: all 0.35s ease;
+  }
+
+  .sqs-block-button-element::before,
+  .image-button-inner .sqs-button-element--primary::before,
+  .sqs-system-button::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0%;
+    width: 100%;
+    background-color: @dark;
+    z-index: 1;
+    transition: all 0.35s ease;
+  }
+
+  .sqs-block-button-element:hover::before,
+  .image-button-inner .sqs-button-element--primary:hover::before,
+  .sqs-system-button:hover::before {
+    height: 100%;
+  }
+
+  .sqs-block-button-element span.text-wrap,
+  .image-button-inner .sqs-button-element--primary span.text-wrap,
+  .sqs-system-button > .text-wrap {
+    display: block;
+    text-align: center !important;
+    transition: all 0.35s ease;
+    z-index: 2;
+    position: relative;
+  }
+
+  .sqs-block-button-element:hover span.text-wrap,
+  .image-button-inner .sqs-button-element--primary:hover span.text-wrap,
+  .sqs-system-button:hover > .text-wrap {
+    transform: translateY(-175%);
+    opacity: 0;
+  }
+
+  .sqs-block-button-element span.text-wrap.bottom,
+  .image-button-inner .sqs-button-element--primary span.text-wrap.bottom,
+  .sqs-system-button > .text-wrap.bottom {
+    transition-delay: 0s;
+  }
+
+  .sqs-block-button-element:hover span.text-wrap.bottom,
+  .image-button-inner .sqs-button-element--primary:hover span.text-wrap.bottom,
+  .sqs-system-button:hover > .text-wrap.bottom {
+    transition-delay: 0.175s;
+  }
+
+  .sqs-block-button-element:hover,
+  .image-button-inner .sqs-button-element--primary:hover,
+  .sqs-system-button:hover {
+    opacity: 1 !important;
+  }
+
+  .sqs-block-button-element span.text-wrap + span.text-wrap,
+  .image-button-inner .sqs-button-element--primary span.text-wrap + span.text-wrap,
+  .sqs-system-button > .text-wrap + span.text-wrap {
+    position: absolute;
+    color: @white;
+    opacity: 0;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+
+  .sqs-block-button-element:hover span.text-wrap + span.text-wrap,
+  .image-button-inner .sqs-button-element--primary:hover span.text-wrap + span.text-wrap,
+  .sqs-system-button:hover > .text-wrap + span.text-wrap {
+    transform: translateY(-175%);
+    opacity: 1;
+  }
+}
