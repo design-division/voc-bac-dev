@@ -7,7 +7,7 @@
 @media only screen and (min-width: 62em) {
   .sqs-button-element--secondary:hover {
     background-color: transparent !important;
-    border-color: @dark;
+    border-color: var(--dark);
   }
 
   .sqs-block-button-element .text-wrap {
@@ -33,7 +33,7 @@
     right: 0;
     height: 0%;
     width: 100%;
-    background-color: @dark;
+    background-color: var(--dark);
     z-index: 1;
     transition: all 0.35s ease;
   }
@@ -83,7 +83,7 @@
   .image-button-inner .sqs-button-element--primary span.text-wrap + span.text-wrap,
   .sqs-system-button > .text-wrap + span.text-wrap {
     position: absolute;
-    color: @white;
+    color: var(--white);
     opacity: 0;
     top: 100%;
     left: 0;
