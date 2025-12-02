@@ -19,11 +19,11 @@
 }
 
 /*COLOUR VARIABLES*/
-@white: ~"hsl(var(--white-hsl))";
-@light: ~"hsl(var(--lightAccent-hsl))";
-@accent: ~"hsl(var(--accent-hsl))";
-@dark: ~"hsl(var(--darkAccent-hsl))";
-@black: ~"hsl(var(--black-hsl))";
+@white: hsl(var(--white-hsl));
+@light: hsl(var(--lightAccent-hsl));
+@accent: hsl(var(--accent-hsl));
+@dark: hsl(var(--darkAccent-hsl));
+@black: hsl(var(--black-hsl));
 
 :root {
     /*Colours*/
