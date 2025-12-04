@@ -1,3 +1,111 @@
+/* # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# # # # # # # # # # # #  GENERAL LIST STYLES   # # # # # # # # # # #
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # */
+
+:root {
+    --list-section-title-text-font-letter-spacing: -1.2px !important;
+}
+
+@supports (--test-custom-property: true) {
+    .user-items-list-item-container {
+        --title-font-size-value: 1 !important;
+        --button-font-size-value: 1 !important;
+    }
+}
+
+.list-item-media-inner {
+    border-radius: var(--br-med) !important;
+}
+
+/* # # # # LIST ARROWS # # # # */
+
+.arrows-bottom {
+    grid-gap: 8px;
+}
+
+.arrows-bottom-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.user-items-list-item-container.user-items-list-carousel {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.desktop-arrows.arrows-bottom-wrapper {
+    margin-top: 0rem !important;
+    margin-bottom: 2vw !important;
+}
+
+.user-items-list-carousel__arrow-icon {
+    display: none !important;
+}
+
+.user-items-list-carousel__arrow-button {
+    width: 40px;
+    height: 40px;
+    background: var(--list-section-carousel-arrow-background-color);
+}
+
+.user-items-list-carousel__arrow-button::before {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font: var(--fa-font-sharp-regular);
+    content: "\f061";
+    opacity: 1 !important;
+    transition: var(--trans-1) !important;
+    color: var(--list-section-carousel-arrow-color);
+}
+
+.user-items-list-carousel__arrow-icon-background-area,
+.user-items-list-carousel__arrow-button--left::before,
+.user-items-list-carousel__arrow-button--right::before,
+.user-items-list-carousel__arrow-button {
+    transition: var(--trans-1) !important;
+}
+
+.user-items-list-carousel__arrow-button--left::before {
+    content: "\f104";
+}
+
+.user-items-list-carousel__arrow-button--right::before {
+    content: "\f105";
+}
+
+.user-items-list-carousel__arrow-button .user-items-list-carousel__arrow-icon-background-area {
+    opacity: 0 !important;
+}
+
+.user-items-list-carousel__arrow-button:hover.user-items-list-carousel__arrow-button--right::before,
+.user-items-list-carousel__arrow-button:hover.user-items-list-carousel__arrow-button--left::before {
+    color: var(--list-section-carousel-arrow-background-color) !important;
+}
+
+.user-items-list-carousel__arrow-button:hover {
+    background: var(--list-section-title-color);
+}
+
+/* # # # # LIST TEXT STYLING # # # # */
+.user-items-list .list-section-title {
+    margin-left: 0rem;
+    padding-left: 0rem;
+    padding-bottom: 0rem !important;
+    height: fit-content !important;
+}
+
+/* # # # # LIST BUTTONS # # # # */
+
+.user-items-list-carousel .list-item-content__button {
+    font-size: var(--cta-size) !important;
+}
+
+/* # # # # LIST IMAGES # # # # */
+.user-items-list-carousel__media-inner {
+    border-radius: var(--br-med);
+}
+
 
 /* # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 # # # # # # # # # # # TESTIMONIAL STYLE LISTS  # # # # # # # # # # # 
