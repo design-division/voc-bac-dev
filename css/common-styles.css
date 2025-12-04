@@ -175,6 +175,18 @@ html {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 8px;
 }
+  .field-list .form-item:not(.checkbox) .title {
+    font-size: 0px !important;
+    height: 0px;
+    padding: 0px;
+    margin: 0px;
+    opacity: 0;
+  }
+  .field-list .field,
+  .field,
+  .sqs-site-style-form .react-form-contents .field-list .field {
+    margin: 0px !important;
+  }
 
 .field:not(#text-fc9ffdb8-3e19-4aed-82c7-26ce45358886):not(#text-786c4a6e-ad66-41eb-9112-15a33b77ed4f) {
     grid-column: span 2;
@@ -210,3 +222,12 @@ fieldset#checkbox-598945f0-8359-4f49-8d4d-12be1666f69c {
         padding-bottom: 0.5rem;
     }
 }
+
+
+/* MAP BLOCK CUSTOMISATION */
+  .map-block {
+    border-radius: var(--br-med) !important;
+    padding: 0px !important;
+    overflow: hidden;
+    border: 1px solid var(--black);    
+  }
