@@ -195,7 +195,7 @@ section[id*="reviews"] {
     .list-item-media {
         position: relative;
     }
-    .list-item-content__title {
+    .list-item-media .list-item-content__title {
         font-size: var(--h3-size) !important;
         position: absolute;
         bottom: 0;
