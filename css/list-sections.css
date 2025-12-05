@@ -6,11 +6,6 @@
     --list-section-title-text-font-letter-spacing: -1.2px !important;
 }
 
-    .user-items-list-item-container {
-        --title-font-size-value: 1 !important;
-        --button-font-size-value: 1 !important;
-    }
-
 .list-item-media-inner {
     border-radius: var(--br-med) !important;
 }
