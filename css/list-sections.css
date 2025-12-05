@@ -94,7 +94,10 @@
     padding-bottom: 0rem !important;
     height: fit-content !important;
 }
-
+.list-item-content__description {
+    letter-spacing: unset !important;
+}
+ 
 /* # # # # LIST BUTTONS # # # # */
 
 .user-items-list-carousel .list-item-content__button {
