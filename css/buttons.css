@@ -88,7 +88,7 @@
   .image-button-inner .sqs-button-element--primary span.text-wrap + span.text-wrap,
   .sqs-system-button > .text-wrap + span.text-wrap {
     position: absolute;
-    color: var(--white);
+    color: var(--rollover-text-color);
     opacity: 0;
     top: 100%;
     left: 0;
