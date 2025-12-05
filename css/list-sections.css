@@ -10,7 +10,7 @@
     border-radius: var(--br-med) !important;
 }
 
-/* # # # # LIST ARROWS # # # # */
+/* # # # # CAROUSEL LIST ARROWS # # # # */
 
 .arrows-bottom {
     grid-gap: 8px;
@@ -90,6 +90,8 @@
 .list-item-content__description {
     letter-spacing: unset !important;
 }
+
+
  
 /* # # # # LIST BUTTONS # # # # */
 
@@ -189,10 +191,33 @@ section[id*="reviews"] {
 /* # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 # # # # # # # # # # # # # #  SIMPLE LISTS  # # # # # # # # # # # # #
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # */
+.user-items-list-simple {
+    .list-section-title {
+        padding-left: 4vw !important;
+        padding-right: 4vw !important;
+        margin-bottom: 1.5rem;
+    }
+    .list-item-media {
+        position: relative;
+    }
+    .list-item-content__title {
+        font-size: var(--h3-size) !important;
+        position: absolute;
+        bottom: 0;
+        padding: 2vmax 2.5vmax;
+        max-width: 70% !important;
+    }
+    .list-item-content__description {
+        font-size: var(--p1-size) !important;
+        letter-spacing: var(--body-font-letter-spacing);
+    }
+}
 
-/*SIMPLE LIST*/
+
+/*SIMPLE LIST
 section[id*="simple-list"] .list-section-title {
     padding-left: 4vw !important;
     padding-right: 4vw !important;
     margin-bottom: 1.5rem;
-}
+}*/
+
