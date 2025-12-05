@@ -199,7 +199,7 @@ section[id*="reviews"] {
         font-size: var(--h3-size) !important;
         position: absolute;
         bottom: 0;
-        padding: 2vmax 2.5vmax;
+        padding: calc(var(--sqs-site-gutter) * 0.35) calc(var(--sqs-site-gutter) * 0.5);
         max-width: 70% !important;
     }
     .list-item-content__description {
@@ -210,8 +210,8 @@ section[id*="reviews"] {
 
 /*SIMPLE LIST*/
 section[id*="simple-list"] .list-section-title {
-    padding-left: 4vw !important;
-    padding-right: 4vw !important;
+    padding-left: var(--sqs-site-gutter) !important;
+    padding-right: var(--sqs-site-gutter) !important;
     margin-bottom: 1.5rem;
 }
 
