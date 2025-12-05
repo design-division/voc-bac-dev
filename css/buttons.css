@@ -3,11 +3,16 @@
   margin: 0.25rem !important;
 }
 
+/*PADDING CORRECTION*/
+#siteWrapper.site-wrapper .sqs-button-element--primary, #siteWrapper.site-wrapper .sqs-button-element--secondary, #siteWrapper.site-wrapper .sqs-button-element--tertiary {  
+  padding-top: calc(var(--tertiary-button-padding-y) + 2px) !important;
+}
+
 /*BUTTON HOVERS // Laptops & above*/
 @media only screen and (min-width: 62em) {
   .sqs-button-element--secondary:hover {
     background-color: transparent !important;
-    border-color: var(--dark);
+    border-color: var(--rollover-hover-color) !important;
   }
 
   .sqs-block-button-element .text-wrap {
@@ -33,7 +38,7 @@
     right: 0;
     height: 0%;
     width: 100%;
-    background-color: var(--dark);
+    background-color: var(--rollover-hover-color);
     z-index: 1;
     transition: all 0.35s ease;
   }
