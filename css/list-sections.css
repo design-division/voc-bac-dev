@@ -192,11 +192,6 @@ section[id*="reviews"] {
 # # # # # # # # # # # # # #  SIMPLE LISTS  # # # # # # # # # # # # #
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # */
 .user-items-list-simple {
-    .list-section-title {
-        padding-left: 4vw !important;
-        padding-right: 4vw !important;
-        margin-bottom: 1.5rem;
-    }
     .list-item-media {
         position: relative;
     }
@@ -213,11 +208,10 @@ section[id*="reviews"] {
     }
 }
 
-
-/*SIMPLE LIST
+/*SIMPLE LIST*/
 section[id*="simple-list"] .list-section-title {
     padding-left: 4vw !important;
     padding-right: 4vw !important;
     margin-bottom: 1.5rem;
-}*/
+}
 
