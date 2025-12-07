@@ -95,9 +95,10 @@
  
 /* # # # # LIST BUTTONS # # # # */
 
-.user-items-list-carousel .list-item-content__button {
+.user-items-list-carousel .list-item-content__button, .user-items-list-simple .list-item-content__button {
     font-size: var(--cta-size) !important;
 }
+
 
 /* # # # # LIST IMAGES # # # # */
 .user-items-list-carousel__media-inner {
