@@ -14,6 +14,9 @@
     background-color: transparent !important;
     border-color: var(--rollover-hover-color) !important;
   }
+   .sqs-button-element--tertiary:hover {
+    border-color: var(--rollover-hover-color) !important;
+  }
 
   .sqs-block-button-element .text-wrap {
     vertical-align: middle !important;
