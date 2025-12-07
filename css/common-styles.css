@@ -115,7 +115,27 @@
     }
 }
 
-/*TESTING NEW CODE*/
+/*FONT TWEAKS*/
+.sqs-block-content h1,
+.sqs-block-content h2 {
+    letter-spacing: var(--lsp-lrg) !important;
+}
+
+.sqs-block-content h3,
+.sqs-block-content h4,
+.list-item-content__title {
+    letter-spacing: var(--lsp-sml) !important;
+}
+
+.sqs-block-content h4 a {
+    text-decoration: none !important;
+    color: var(--headingSmallColor);
+    transition: var(--trans-1);
+}
+
+.sqs-block-content h4 a:hover {
+    color: var(--headingLinkColor) !important;
+}
 
 
 /*Rounded Image Corners*/
