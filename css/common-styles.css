@@ -309,10 +309,11 @@ fieldset#checkbox-598945f0-8359-4f49-8d4d-12be1666f69c {
     opacity: 0 !important;
 }
 
+/*
 .header-nav,
 .header-actions {
     display: none !important;
-}
+}*/
 
 .header--menu-open .header-menu {
     opacity: 1 !important;
