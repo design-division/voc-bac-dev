@@ -84,7 +84,7 @@
         --p3-size: calc((var(--small-1-size-value) - 1) * calc(.012 * min(100vh, 900px)) + 1rem);
         --cta-size: calc((var(--primary-button-font-font-size-value) - 1) * calc(.012 * min(100vh, 900px)) + 1rem);
 
-        //Misc
+        /*Misc*/
         --pad-med: 7.5vw;
         --voc-logo-width: 30vmax;
     }
@@ -261,7 +261,7 @@ fieldset#checkbox-598945f0-8359-4f49-8d4d-12be1666f69c {
     --menu-hover-color: var(--accent);
 }
 
-//FOOTNOTE
+/*Footnote*/
 .menu-footnote {
     display: flex;
     align-items: start;
@@ -285,7 +285,7 @@ fieldset#checkbox-598945f0-8359-4f49-8d4d-12be1666f69c {
     clip: auto !important;
     white-space: normal !important;
 
-    //Styles
+    /*Styles*/
     border-radius: 50px;
     padding: var(--primary-button-padding-y) var(--primary-button-padding-x) !important;
     text-align: right;
@@ -352,7 +352,7 @@ fieldset#checkbox-598945f0-8359-4f49-8d4d-12be1666f69c {
 }
 
 .site-wrapper .header-menu .header-menu-nav a:not(.btn) {
-    //color: var(--navigationLinkColor);
+    /*color: var(--navigationLinkColor);*/
 }
 
 .header-menu-nav-item {
