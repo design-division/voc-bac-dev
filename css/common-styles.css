@@ -269,7 +269,7 @@ fieldset#checkbox-598945f0-8359-4f49-8d4d-12be1666f69c {
 
     p {
         margin: 0rem;
-        color: var(--light);
+        color: var(--navigationLinkColor);
     }
 
     a {
@@ -352,8 +352,7 @@ fieldset#checkbox-598945f0-8359-4f49-8d4d-12be1666f69c {
 }
 
 .site-wrapper .header-menu .header-menu-nav a:not(.btn) {
-    color: var(--navigationLinkColor);
-
+    //color: var(--navigationLinkColor);
 }
 
 .header-menu-nav-item {
@@ -376,7 +375,7 @@ fieldset#checkbox-598945f0-8359-4f49-8d4d-12be1666f69c {
 
 
 
-// Laptops & above
+/*Laptops & above*/
 @media only screen and (min-width: 62em) {
     .header-menu .header-menu-nav {
         width: 40vw !important;
@@ -385,7 +384,7 @@ fieldset#checkbox-598945f0-8359-4f49-8d4d-12be1666f69c {
 
 }
 
-// Phones & Tablets
+/*Phones & Tablets*/
 @media only screen and (max-width: 62em) {
     .header .header-announcement-bar-wrapper {
         padding: var(--sqs-site-gutter);
