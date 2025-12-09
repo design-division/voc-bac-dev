@@ -269,7 +269,7 @@ fieldset#checkbox-598945f0-8359-4f49-8d4d-12be1666f69c {
 
     p {
         margin: 0rem;
-        color: @light;
+        color: var(--light);
     }
 
     a {
@@ -334,10 +334,10 @@ fieldset#checkbox-598945f0-8359-4f49-8d4d-12be1666f69c {
 
     .header-menu-nav {
         border-radius: var(--br-med) !important;
-        margin: ~"calc(var(--sqs-site-gutter) * 0.5)";
+        margin: calc(var(--sqs-site-gutter) * 0.5);
         background: var(--menuOverlayBackgroundColor);
-        padding: ~"calc(var(--sqs-site-gutter) * 1)" !important;
-        padding-top: ~"calc(var(--sqs-site-gutter) + 3vw)" !important;
+        padding: calc(var(--sqs-site-gutter) * 1) !important;
+        padding-top: calc(var(--sqs-site-gutter) + 3vw) !important;
         box-sizing: border-box;
         z-index: 999 !important;
     }
@@ -389,11 +389,11 @@ fieldset#checkbox-598945f0-8359-4f49-8d4d-12be1666f69c {
 @media only screen and (max-width: 62em) {
     .header .header-announcement-bar-wrapper {
         padding: var(--sqs-site-gutter);
-        padding-left: ~"calc(var(--sqs-site-gutter) * 1.25)";
+        padding-left: calc(var(--sqs-site-gutter) * 1.25);
     }
 
     .header-menu-nav-list {
-        margin-top: ~"calc(var(--sqs-site-gutter) * 1.5)" !important;
+        margin-top: calc(var(--sqs-site-gutter) * 1.5) !important;
     }
 
     .header-menu-nav-folder-content {
