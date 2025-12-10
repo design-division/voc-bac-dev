@@ -201,10 +201,11 @@ section[id*="reviews"] {
         position: absolute;
         bottom: 0;
         padding: calc(var(--sqs-site-gutter) * 0.35) calc(var(--sqs-site-gutter) * 0.5);
-        max-width: 70% !important;
+        /*max-width: 70% !important;*/
     }
     .list-item-content__description {
         font-size: var(--p1-size) !important;
+        margin-top: 0px !important;
         letter-spacing: var(--body-font-letter-spacing);
     }
 }
