@@ -26,7 +26,7 @@ html .c-lightbox__content.is-loaded.is-overflow {
 }
 
 html .c-lightbox[data-type=inline] .c-lightbox__slide {
-  padding: var(--lb-padding-slide-lg);
+  padding: var(--lb-padding-slide-lg) !important;
 }
 
 .c-lightbox__content-wrapper,
@@ -98,8 +98,8 @@ html .c-lightbox__content-inner section[id*="lb-banner"] .sqs-html-content {
   color: var(--color-dark, #000);
   font: var(--fa-font-sharp-solid);
   font-weight: 300;
-  height: var(--lb-icon-size-lg);
-  width: var(--lb-icon-size-lg);
+  height: var(--lb-icon-size-lg) !important;
+  width: var(--lb-icon-size-lg) !important;
   line-height: 1rem;
 }
 
