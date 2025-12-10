@@ -205,7 +205,6 @@ section[id*="reviews"] {
     }
     .list-item-content__description {
         font-size: var(--p1-size) !important;
-        margin-top: 0px !important;
         letter-spacing: var(--body-font-letter-spacing);
     }
 }
