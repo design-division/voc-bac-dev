@@ -91,7 +91,7 @@ html .c-lightbox__content-inner section[id*="lb-banner"] .sqs-html-content {
 .c-lightbox .c-lightbox__button--arrow_left:before,
 .c-lightbox .c-lightbox__button--close:before,
 .c-lightbox .fancybox-close-small:before {
-  font-size: var(--lb-icon-size-lg) !important;
+  font-size: 180% !important;
   display: flex;
   justify-content: center;
   align-items: center;
