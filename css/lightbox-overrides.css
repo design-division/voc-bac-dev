@@ -133,7 +133,8 @@ html .c-lightbox__content-inner section[id*="lb-banner"] .sqs-html-content {
 /* VIDS + MTB LB ONLY */
 #lightbox__videos_block-yui_3_17_2_1_1764062099588_1903__content,
 #lightbox__videos_block-yui_3_17_2_1_1763341502142_1697__content,
-#lightbox__videos_block-yui_3_17_2_1_1763341502142_2348__content {
+#lightbox__videos_block-yui_3_17_2_1_1763341502142_2348__content, 
+#lightbox__mtb-map_block-yui_3_17_2_1_1764909744408_1716__content {
   max-width: 950px !important;
   height: auto !important;
 }
