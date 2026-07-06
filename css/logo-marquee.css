@@ -1,3 +1,24 @@
+/* Scoped to logo-marquee sections only */
+  section[id*="logo-marquee"] .marquee-track-wrap {
+    overflow: hidden;
+  }
+  section[id*="logo-marquee"] ul.user-items-list-simple.marquee-track {
+    display: flex !important;
+    grid-template-columns: none !important;
+    width: max-content;
+    animation: logo-marquee-scroll 30s linear infinite; /* speed */
+  }
+  section[id*="logo-marquee"] ul.user-items-list-simple.marquee-track > li {
+    flex: 0 0 auto;
+    width: 200px; /* logo size */
+  }
+  @keyframes logo-marquee-scroll {
+    from { transform: translate3d(0, 0, 0); }
+    to   { transform: translate3d(-50%, 0, 0); }
+  }
+
+
+/*
 :root {
   --logo-marquee-width: 100%;
   --logo-marquee-height: auto;
@@ -53,4 +74,6 @@
     --logo-marquee-elements-displayed: 3;
     --logo-marquee-small-height: 70%;
   }
-}
+}*/
+
+
