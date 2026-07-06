@@ -30,3 +30,21 @@ document.querySelectorAll(".logo-marquee").forEach(wrapper => {
         content.appendChild(content.children[i].cloneNode(true));
     }
 });
+
+
+// New Logo Marquee Script
+  (function () {
+    document.querySelectorAll('section[id*="logo-marquee"] ul.user-items-list-simple').forEach(function (list) {
+      if (list.dataset.marqueeInit) return; // avoid double-init on repeat runs
+      list.dataset.marqueeInit = 'true';
+
+      var wrap = document.createElement('div');
+      wrap.className = 'marquee-track-wrap';
+      list.parentNode.insertBefore(wrap, list);
+      wrap.appendChild(list);
+      list.classList.add('marquee-track');
+
+      // Duplicate the items once for a seamless loop
+      list.insertAdjacentHTML('beforeend', list.innerHTML);
+    });
+  })();
