@@ -194,6 +194,7 @@ html {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 8px;
+    margin-bottom: 8px;
 }
   .field-list .form-item:not(.checkbox) .title {
     font-size: 0px !important;
